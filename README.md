@@ -1,16 +1,16 @@
-# mushaf_ds
+[Setup]
+AppName=mushaf_ds
+AppVersion=1.0
+DefaultDirName={pf}\mushaf_ds
+DefaultGroupName=mushaf_ds
+OutputBaseFilename=mushaf_dsInstaller
+Compression=lzma
+SolidCompression=yes
 
-A new Flutter project.
+[Files]
+Source: "C:\mushaf_ds\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+[Icons]
+Name: "{group}\mushaf_ds"; Filename: "{app}\mushaf_ds.exe"
+Name: "{commondesktop}\mushaf_ds"; Filename: "{app}\mushaf_ds.exe"
+Name: "{group}\Uninstall mushaf_ds"; Filename: "{uninstallexe}"
